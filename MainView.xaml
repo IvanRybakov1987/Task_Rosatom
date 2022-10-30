@@ -1,0 +1,24 @@
+﻿<Window x:Class="Task_Rosatom.MainView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Task_Rosatom"
+             mc:Ignorable="d" 
+             Height="250" Width="400"
+             Title="Автоматическая расстановка фланцев">    
+    <StackPanel>
+        <Label Content="Выберите имя системы воздуховода"
+               Margin="5"/>
+        <ComboBox ItemsSource="{Binding NameSystem}"
+                  SelectedValue="{Binding SelectedSystem}"
+                  DisplayMemberPath="Name"
+                  Margin="5"/>
+        <Label Content="Максимально разрешенная длина участка воздуховода в милиметрах"
+               Margin="5"/>
+        <TextBox Text="{Binding LenthLine}" Margin="5"/>
+        <Button Content="Выбрать" Command="{Binding SelectCommand}"
+                Margin="5"/>
+
+    </StackPanel>
+</Window>

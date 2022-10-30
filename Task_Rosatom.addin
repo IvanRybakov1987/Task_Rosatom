@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>TaskRosAtom</Name>
+		<Assembly>"E:\YandexDisk\Вложения\обучение\Росатом\Task_Rosatom\bin\Debug\Task_Rosatom.dll"</Assembly>
+		<FullClassName>Task_Rosatom.App</FullClassName>
+		<AddInId>b1804b23-e7cf-4a6d-b6fc-bb4a879681b9</AddInId>
+		<VendorId>Ivan Rybakov</VendorId>
+		<VendorDescription>baho-97@mail.ru</VendorDescription>
+	</AddIn>
+</RevitAddIns>
